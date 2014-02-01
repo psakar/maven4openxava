@@ -2,7 +2,7 @@
 
 version=4.9
 
-#(cd openxava-${version}/workspace/MySchool && ant)
+(cd openxava-${version}/workspace/MySchool && ant)
 
 lib=openxava-4.9/workspace/OpenXava/lib
 
