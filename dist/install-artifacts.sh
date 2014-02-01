@@ -9,6 +9,7 @@ lib=openxava-4.9/workspace/OpenXava/lib
 #(cd openxava-${version}/workspace/MySchool && ant)
 
 
+echo "" > $pomfile
 
 for f in $(ls $lib) ; do
 
@@ -17,7 +18,7 @@ for f in $(ls $lib) ; do
 
   echo "<dependency>" >> $pomfile
   echo "<groupId>${groupId}</groupId>" >> $pomfile
-  echo "<artifactId>${name</artifactId>" >> $pomfile
+  echo "<artifactId>${name}</artifactId>" >> $pomfile
   echo "<version>${version}</version>" >> $pomfile
   echo "</dependency>" >> $pomfile
 
@@ -33,7 +34,7 @@ for f in $(ls $lib) ; do
   if [ $? != 0 ]; then
     exit 1
   fi
-  echo "$name done ..."  
-  
+  echo "$name done ..."
+
 
 done
