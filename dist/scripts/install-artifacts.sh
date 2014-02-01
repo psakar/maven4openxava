@@ -2,11 +2,10 @@
 
 groupId=org.openxava.deps
 version=4.9
-pomfile=deps.txt
+pomfile=/tmp/ox-deps.txt
 openxava=openxava-4.9/workspace
 
 
-(cd openxava-${version}/workspace/MySchool && ant)
 
 
 
@@ -18,13 +17,12 @@ function upload_from_dir {
 
     for f in $(ls $lib) ; do
 
-        if [ $f eq "openxava.jar" ]; then
-            echo "Skippinng $f ..."
+        if [ $f == "openxava.jar" ]; then
+            echo "Skipping $f ..."
             continue;
         fi
 
         echo "Processing $f ..."
-        exit 1
 
       name=$(echo $f | sed -e 's/\.jar//')
 
@@ -34,7 +32,7 @@ function upload_from_dir {
       echo "<version>${version}</version>" >> $pomfile
       echo "</dependency>" >> $pomfile
 
-      if [ 0 = 0 ] ; then
+      if [ 1 = 0 ] ; then
           mvn install:install-file -Dfile=$lib/$f \
                         -DgroupId=$groupId \
                         -DartifactId=$name \
