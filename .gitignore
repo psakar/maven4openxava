@@ -1,4 +1,4 @@
 target/
 .idea
 *.iml
-dist/openxava*/tomcat
+#dist/openxava*/tomcat
