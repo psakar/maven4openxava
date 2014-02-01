@@ -3,13 +3,14 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.openxava.app</groupId>
-    <artifactId>ox-app-template</artifactId>
-    <packaging>war</packaging>
-    <name>ox-app-template</name>
+    <groupId>org.openxava</groupId>
+    <artifactId>openxava-testing</artifactId>
+    <packaging>jar</packaging>
 
-    <description>OpenXava Template application</description>
-    <version>1.0.0-SNAPSHOT</version>
+	<name>OpenXava Testing</name>
+
+    <description>OpenXava Testing</description>
+    <version>4.9</version>
 
     <build>
         <plugins>
@@ -22,26 +23,6 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                        </manifest>
-                        <manifestEntries>
-                        </manifestEntries>
-                    </archive>
-                    <webResources>
-                        <resource>
-                            <filtering>false</filtering>
-                            <directory>${basedir}/webapp</directory>
-                        </resource>
-                    </webResources>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
@@ -49,7 +30,37 @@
         <dependency>
             <groupId>org.openxava</groupId>
             <artifactId>openxava</artifactId>
-            <version>4.9</version>
+            <version>${project.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>org.openxava.deps</groupId>
+			<artifactId>htmlunit-core-js</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>org.openxava.deps</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openxava.deps</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openxava.deps</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openxava.deps</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openxava.deps</groupId>
+            <artifactId>junit</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- tomcat -> tests -->
@@ -57,43 +68,36 @@
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-catalina</artifactId>
             <version>${tomcat.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-coyote</artifactId>
             <version>${tomcat.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-dbcp</artifactId>
             <version>${tomcat.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-el-api</artifactId>
             <version>${tomcat.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jasper-el</artifactId>
             <version>${tomcat.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jasper</artifactId>
             <version>${tomcat.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jsp-api</artifactId>
             <version>${tomcat.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
