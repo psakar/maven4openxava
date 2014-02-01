@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.openxava.app</groupId>
-    <artifactId>ox-app-template</artifactId>
+    <artifactId>oxapp-template</artifactId>
     <packaging>war</packaging>
-    <name>ox-app-template</name>
+    <name>oxapp-template</name>
 
-    <description>OpenXava Template application</description>
+    <description>OpenXava application Template</description>
     <version>1.0.0-SNAPSHOT</version>
 
     <build>

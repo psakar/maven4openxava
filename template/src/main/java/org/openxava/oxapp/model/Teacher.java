@@ -1,4 +1,4 @@
-package org.openxava.model;
+package org.openxava.oxapp.model;
 
 import java.util.*;
 import javax.persistence.*;
