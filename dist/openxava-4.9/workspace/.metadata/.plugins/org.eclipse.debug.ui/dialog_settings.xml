@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
+		<item value="679" key="org.eclipse.debug.ui.DIALOG_HEIGHT"/>
+		<item value="663" key="org.eclipse.debug.ui.DIALOG_WIDTH"/>
+		<item value="0" key="org.eclipse.debug.ui.DIALOG_ORIGIN_Y"/>
+		<item value="309" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
+		<item value="88" key="org.eclipse.debug.ui.DIALOG_ORIGIN_X"/>
+		<item value="690" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
+	</section>
+	<section name="FAVORITES_DIALOG_SECTION">
+		<item value="235" key="org.eclipse.debug.ui.DIALOG_HEIGHT"/>
+		<item value="229" key="org.eclipse.debug.ui.DIALOG_WIDTH"/>
+		<item value="209" key="org.eclipse.debug.ui.DIALOG_ORIGIN_Y"/>
+		<item value="402" key="org.eclipse.debug.ui.DIALOG_ORIGIN_X"/>
+	</section>
+</section>
