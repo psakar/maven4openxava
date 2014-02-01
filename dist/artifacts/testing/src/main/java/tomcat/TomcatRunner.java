@@ -1,4 +1,4 @@
-package org.openxava.tomcat;
+package tomcat;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.Engine;
@@ -9,8 +9,8 @@ import org.apache.catalina.realm.UserDatabaseRealm;
 import org.apache.catalina.startup.ContextConfig;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
-import org.springframework.util.Assert;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -20,7 +20,7 @@ import java.net.MalformedURLException;
 
 public class TomcatRunner {
 
-	private static final Logger LOG = Logger.getLogger(TomcatRunner.class);
+	private static final Logger LOG = LoggerFactory.getLogger(TomcatRunner.class);
 
 	/**
 	 * Convenience class to embed a Catalina servlet container environment
@@ -101,13 +101,13 @@ public class TomcatRunner {
 
 		// Canonicalisation du directory
 		File currentDirPath = new File(currentDir);
-		Assert.isTrue(currentDirPath.exists());
+		assert currentDirPath.exists();
 		currentDir = currentDirPath.getCanonicalPath();
 
 		// Create CATALINA_HOME
 		File catalinaHomePath = new File(currentDir + "/target/CATALINA_HOME");
 		if (!catalinaHomePath.exists()) {
-			Assert.isTrue(catalinaHomePath.mkdirs());
+			assert catalinaHomePath.mkdirs();
 		}
 		catalinaHome = catalinaHomePath.getCanonicalPath();
 
@@ -184,7 +184,7 @@ public class TomcatRunner {
 		if (!defaultWebXmlPath.exists()) {
 			// Va le chercher dans le war
 			InputStream defWebXmlIs = getClass().getClassLoader().getResourceAsStream("embedded-tomcat-default-web.xml");
-			Assert.notNull(defWebXmlIs);
+			assert defWebXmlIs != null;
 
 			byte[] bytes = new byte[defWebXmlIs.available()];
 			int nbBytes = defWebXmlIs.read(bytes);

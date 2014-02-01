@@ -1,5 +1,7 @@
 package org.openxava.tomcat;
 
+import tomcat.TomcatRunner;
+
 import java.io.IOException;
 
 public class OpenXavaTomcatRunner extends TomcatRunner {

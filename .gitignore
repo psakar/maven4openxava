@@ -2,3 +2,7 @@ target/
 .idea
 *.iml
 #dist/openxava*/tomcat
+
+dist/artifacts/openxava/src/main/java/org
+dist/artifacts/openxava/src/main/resources
+dist/artifacts/testing/src/main/java/org
