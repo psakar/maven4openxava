@@ -13,7 +13,7 @@
 	<version>4.9</version>
 
 	<modules>
-		<module>main</module>
+		<module>openxava</module>
 		<module>testing</module>
 	</modules>
 
