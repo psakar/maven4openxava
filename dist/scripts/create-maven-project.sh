@@ -15,7 +15,6 @@ rm -Rf $dest_openxava/src/main/java/*
 cp -r $src/src/* $dest_openxava/src/main/java
 rm -Rf $dest_openxava/src/main/java/org/openxava/tests
 
-
 # testing : src/main
 rm -Rf $dest_testing/src/main/java/org
 mkdir -p $dest_testing/src/main/java/org/openxava
