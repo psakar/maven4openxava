@@ -1,4 +1,4 @@
-package org.openxava.school.tests;
+package org.openxava.oxapp.model;
 
 import org.openxava.tests.*;
 
