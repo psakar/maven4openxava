@@ -6,8 +6,9 @@ dest_testing=artifacts/testing
 
 # openxava : resources
 rm -Rf $dest_openxava/src/main/resources/*
-cp -r $src/xava $dest_openxava/src/main/resources
+cp -r $src/xava/* $dest_openxava/src/main/resources
 cp -r $src/properties/* $dest_openxava/src/main/resources
+cp -r $src/bin/* $dest_openxava/src/main/resources
 
 # openxava : src/main
 rm -Rf $dest_openxava/src/main/java/*
