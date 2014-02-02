@@ -32,7 +32,8 @@ function upload_from_dir {
       echo "<version>${version}</version>" >> $pomfile
       echo "</dependency>" >> $pomfile
 
-      if [ 1 = 0 ] ; then
+      # To disable installing while debugging the script
+      if [ 0 = 0 ] ; then
           mvn install:install-file -Dfile=$lib/$f \
                         -DgroupId=$groupId \
                         -DartifactId=$name \

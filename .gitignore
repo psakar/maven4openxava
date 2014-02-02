@@ -1,13 +1,11 @@
 target/
 .idea
 *.iml
-#dist/openxava*/tomcat
 
+# The generated openxava.jar
+dist/openxava*/workspace/MySchool/web/WEB-INF/lib/openxava.jar
+dist/openxava*/tomcat/webapps/MySchool/WEB-INF/lib/openxava.jar
+
+# The sources copied from official dist
 dist/artifacts/openxava/src
 dist/artifacts/testing/src
-
-
-
-#dist/artifacts/openxava/src/main/java/org
-#dist/artifacts/openxava/src/main/resources
-#dist/artifacts/testing/src/main/java/org
