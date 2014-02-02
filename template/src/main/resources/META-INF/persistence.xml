@@ -7,6 +7,7 @@
              version="1.0">
              
     <!-- Tomcat + Hypersonic -->
+	<!--
     <persistence-unit name="default">
     	<provider>org.hibernate.ejb.HibernatePersistence</provider>
     	<non-jta-data-source>java:comp/env/jdbc/OxAppDS</non-jta-data-source>
@@ -14,18 +15,29 @@
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
         </properties>
-    </persistence-unit>    
-        
-    <!-- JBoss + Hypersonic 
-    <persistence-unit name="default">
-    	<provider>org.hibernate.ejb.HibernatePersistence</provider>
-    	<non-jta-data-source>java:/MiEscuelaDS</non-jta-data-source>
-    	<class>org.openxava.session.GalleryImage</class>
-        <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
-        </properties>
-    </persistence-unit>    
+    </persistence-unit>
     -->
+
+	<!-- PGSQL -->
+	<persistence-unit name="default">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<non-jta-data-source>java:comp/env/jdbc/OxAppDS</non-jta-data-source>
+		<class>org.openxava.session.GalleryImage</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+		</properties>
+	</persistence-unit>
+
+	<!-- JBoss + Hypersonic
+	<persistence-unit name="default">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<non-jta-data-source>java:/MiEscuelaDS</non-jta-data-source>
+		<class>org.openxava.session.GalleryImage</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
+		</properties>
+	</persistence-unit>
+	-->
     
     <!-- WebSphere + AS/400 
     <persistence-unit name="default">

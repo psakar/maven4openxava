@@ -1,5 +1,7 @@
 package org.openxava.tomcat;
 
+import org.apache.catalina.Host;
+import org.apache.catalina.valves.AccessLogValve;
 import tomcat.TomcatRunner;
 
 import java.io.IOException;
@@ -24,14 +26,14 @@ public class OxAppTomcatRunner extends TomcatRunner {
         super(currentDir, contextPath, port, webappDir, contextXmlPath, userDatabasePath);
     }
 
-//    @Override
-//    protected void addCustomContexts(Host host) throws IOException {
-//        super.addCustomContexts(host);
-//        // Create access.log
-//        AccessLogValve accessLogValve = new AccessLogValve();
-//        accessLogValve.setPrefix("localhost_access_log.");
-//        accessLogValve.setSuffix(".txt");
-//        accessLogValve.setPattern("common");
-//        host.getPipeline().addValve(accessLogValve);
-//    }
+    @Override
+    protected void addCustomContexts(Host host) throws IOException {
+        super.addCustomContexts(host);
+        // Create access.log
+        AccessLogValve accessLogValve = new AccessLogValve();
+        accessLogValve.setPrefix("localhost_access_log.");
+        accessLogValve.setSuffix(".txt");
+        accessLogValve.setPattern("common");
+        host.getPipeline().addValve(accessLogValve);
+    }
 }
