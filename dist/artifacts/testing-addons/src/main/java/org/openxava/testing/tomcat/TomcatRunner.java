@@ -117,6 +117,8 @@ public class TomcatRunner {
 		tomcat = new Tomcat();
 		tomcat.setBaseDir(catalinaHome);
 		tomcat.setPort(params.getPort());
+		tomcat.enableNaming();
+
 		if (params.getURIEncoding() != null) {
 			tomcat.getConnector().setURIEncoding(params.getURIEncoding());
 		}
