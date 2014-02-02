@@ -1,10 +1,13 @@
 package org.openxava.servlet.filter;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
+import org.apache.commons.io.IOUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLDecoder;
@@ -14,18 +17,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
-
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.io.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 /*
@@ -47,7 +38,7 @@ public class StaticContentFromClasspathFilter extends AbstractContentFilter {
 		super.init(filterConfig);
 
 		final String str = getConfig().getInitParameter("forwardRequest");
-		Assert.notNull(str, "Le paramètre forwardRequest est mandatory (true|false)");
+		assert str != null; // "Le paramètre forwardRequest est mandatory (true|false)";
 		forwardRequest = str != null && str.equals("true");
 	}
 

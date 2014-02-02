@@ -1,5 +1,8 @@
 package org.openxava.servlet.filter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterConfig;
 import javax.servlet.RequestDispatcher;
@@ -7,18 +10,15 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
-import org.springframework.mail.javamail.ConfigurableMimeFileTypeMap;
-
 public abstract class AbstractContentFilter implements Filter {
 
-	private static final Logger LOGGER = Logger.getLogger(AbstractContentFilter.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(AbstractContentFilter.class);
 
 	public static final String DISPATCHER_REQUEST_PATH_ATTR = "org.apache.catalina.core.DISPATCHER_REQUEST_PATH";
 
 	private RequestDispatcher defaultRequestDispatcher;
 	private FilterConfig fc;
-	private ConfigurableMimeFileTypeMap mimeConfig;
+	//private ConfigurableMimeFileTypeMap mimeConfig;
 
 	protected FilterConfig getConfig() {
 		return fc;
@@ -37,8 +37,8 @@ public abstract class AbstractContentFilter implements Filter {
 		this.defaultRequestDispatcher = filterConfig.getServletContext().getNamedDispatcher("default");
 		this.fc = filterConfig;
 
-		this.mimeConfig = new ConfigurableMimeFileTypeMap();
-		mimeConfig.afterPropertiesSet();
+		//this.mimeConfig = new ConfigurableMimeFileTypeMap();
+		//mimeConfig.afterPropertiesSet();
 	}
 
 	@Override
@@ -46,14 +46,15 @@ public abstract class AbstractContentFilter implements Filter {
 	}
 
 	protected String getMimeContentType(String path) {
-		final String contentType;
-		if (mimeConfig != null) {
-			contentType = mimeConfig.getContentType(path);
-		}
-		else {
-			contentType = null;
-		}
-		return contentType;
+//		final String contentType;
+//		if (mimeConfig != null) {
+//			contentType = mimeConfig.getContentType(path);
+//		}
+//		else {
+//			contentType = null;
+//		}
+//		return contentType;
+		return null; // TODO
 	}
 
 	/**
