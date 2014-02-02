@@ -10,7 +10,7 @@
 	<!-- static files from classpath for /xava/* (taken from openxava.jar) -->
 	<filter>
 		<filter-name>classpathStaticFilter</filter-name>
-		<filter-class>StaticContentFromClasspathFilter</filter-class>
+		<filter-class>org.openxava.servlet.filter.StaticContentFromClasspathFilter</filter-class>
 		<init-param>
 			<param-name>forwardRequest</param-name>
 			<param-value>true</param-value>
