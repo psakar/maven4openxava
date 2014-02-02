@@ -117,6 +117,7 @@ public class TomcatRunner {
 		tomcat = new Tomcat();
 		tomcat.setBaseDir(catalinaHome);
 		tomcat.setPort(params.getPort());
+		tomcat.enableNaming();
 
 		// Auth Realm
 		if (StringUtils.isNotBlank(params.getUserDatabasePath())) {
