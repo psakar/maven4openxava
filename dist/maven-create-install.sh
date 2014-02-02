@@ -5,7 +5,7 @@ version=4.9
 (cd openxava-${version}/workspace/MySchool && ant)
 
 # Install OpenXava deps
-scripts/install-artifacts.sh
+scripts/install-openxava-deps.sh
 
 # Generate and install OpenXava artifact
 scripts/create-maven-project.sh
