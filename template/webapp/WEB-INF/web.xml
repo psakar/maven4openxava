@@ -18,7 +18,7 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>classpathStaticFilter</filter-name>
-		<url-pattern>/xava2/*</url-pattern>
+		<url-pattern>/xava/*</url-pattern>
 	</filter-mapping>
 
 

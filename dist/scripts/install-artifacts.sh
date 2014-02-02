@@ -57,12 +57,3 @@ echo "" > $pomfile
 upload_from_dir ${openxava}/OpenXava/lib
 upload_from_dir ${openxava}/MySchool/web/WEB-INF/lib
 
-
-mvn install:install-file -Dfile=${openxava}/MySchool/web/WEB-INF/lib/openxava.jar \
-    -DgroupId=$groupId \
-    -DartifactId=$name \
-    -Dversion=$version \
-    -Dpackaging=jar \
-    -DpomFile=openxava-pom.xml
-
-exit 0;
