@@ -37,12 +37,4 @@
 		</testResources>
     </build>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.openxava</groupId>
-			<artifactId>openxava-official</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-	</dependencies>
-
 </project>

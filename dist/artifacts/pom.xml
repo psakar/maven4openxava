@@ -13,7 +13,6 @@
 	<version>4.9</version>
 
 	<modules>
-		<module>openxava-official</module>
 		<module>openxava-addons</module>
 		<module>openxava</module>
 		<module>testing-addons</module>
