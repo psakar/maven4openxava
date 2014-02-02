@@ -14,7 +14,7 @@ cp -r $src/xava/* $dest_openxava/src/main/resources
 cp -r $src/properties/* $dest_openxava/src/main/resources
 cp -r $src/bin/* $dest_openxava/src/main/resources
 cp -r $src/web $dest_openxava/src/main/resources/xava
-rm $dest_openxava/src/main/resources/xava/*.jsp
+#rm $dest_openxava/src/main/resources/xava/*.jsp
 
 # openxava : src/main
 cp -r $src/src/* $dest_openxava/src/main/java
