@@ -2,7 +2,7 @@ package org.openxava.tomcat;
 
 import org.apache.catalina.Host;
 import org.apache.catalina.valves.AccessLogValve;
-import tomcat.TomcatRunner;
+import org.openxava.testing.tomcat.TomcatRunner;
 
 import java.io.IOException;
 

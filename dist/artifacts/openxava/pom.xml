@@ -6,9 +6,9 @@
     <groupId>org.openxava</groupId>
     <artifactId>openxava</artifactId>
     <packaging>jar</packaging>
-    <name>OpenXava code from official dist</name>
+    <name>OpenXava official code</name>
 
-    <description>OpenXava code from official dist</description>
+    <description>OpenXava official code</description>
     <version>4.9</version>
 
     <build>
