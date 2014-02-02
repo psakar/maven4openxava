@@ -13,7 +13,7 @@ public class TeacherTest extends ModuleTestBase {
 	
 	
 	public TeacherTest(String testName) {
-		super(testName, "MySchool", "Teacher");		
+		super(testName, "OxApp", "Teacher");
 	}
 	
 	public void testCreateReadUpdateDelete() throws Exception {

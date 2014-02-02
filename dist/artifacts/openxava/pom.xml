@@ -223,6 +223,13 @@
             <artifactId>hibernate3</artifactId>
             <version>${project.version}</version>
         </dependency>
+		<!--
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<version>3.6.10.Final</version>
+		</dependency>
+				-->
         <dependency>
             <groupId>org.openxava.deps</groupId>
             <artifactId>hibernate-classic-validator</artifactId>

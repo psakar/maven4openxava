@@ -7,7 +7,7 @@ Datasource for OpenXavaTest application
 <datasources>
    <local-tx-datasource>
 
-      <jndi-name>MySchoolDS</jndi-name>
+      <jndi-name>OxAppDS</jndi-name>
 
       <connection-url>jdbc:hsqldb:hsql://localhost:1667</connection-url>
 

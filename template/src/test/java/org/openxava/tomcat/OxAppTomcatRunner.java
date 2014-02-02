@@ -10,10 +10,14 @@ public class OxAppTomcatRunner extends TomcatRunner {
 
 		final String webappDir = "webapp";
 
-		final String contextPath = "/oxapp";
+		final String contextPath = "/OxApp";
+		final String contextXml = "webapp/META-INF/context.xml";
 
-		final OxAppTomcatRunner runner = new OxAppTomcatRunner(".", contextPath, 8083, webappDir, null, null);
+		final OxAppTomcatRunner runner = new OxAppTomcatRunner(".", contextPath, 8083, webappDir, contextXml, null);
 		runner.start();
+
+		// Looooooooooooooooooong wait time........
+		Thread.sleep(100000000000000L);
 	}
 
     public OxAppTomcatRunner(String currentDir, String contextPath, Integer port, String webappDir, String contextXmlPath, String userDatabasePath) throws IOException {

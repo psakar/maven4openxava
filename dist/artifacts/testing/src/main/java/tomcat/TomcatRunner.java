@@ -107,7 +107,8 @@ public class TomcatRunner {
 		// Create CATALINA_HOME
 		File catalinaHomePath = new File(currentDir + "/target/CATALINA_HOME");
 		if (!catalinaHomePath.exists()) {
-			assert catalinaHomePath.mkdirs();
+			boolean ret = catalinaHomePath.mkdirs();
+			assert ret;
 		}
 		catalinaHome = catalinaHomePath.getCanonicalPath();
 
@@ -195,7 +196,8 @@ public class TomcatRunner {
 			FileOutputStream fos = new FileOutputStream(defaultWebXmlPath);
 			try {
 				fos.write(bytes);
-			} finally {
+			}
+			finally {
 				fos.close();
 			}
 		}
