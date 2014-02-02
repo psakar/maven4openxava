@@ -1,6 +1,6 @@
 
 src=openxava-4.9/workspace/OpenXava
-dest_openxava=artifacts/openxava-official
+dest_openxava=artifacts/openxava
 dest_testing=artifacts/testing
 
 
@@ -24,7 +24,6 @@ rm -Rf $dest_openxava/src/main/java/org/openxava/tests
 rm -Rf $dest_testing/src
 mkdir -p $dest_testing/src/main/java/org/openxava
 cp -r $src/src/org/openxava/tests $dest_testing/src/main/java/org/openxava
-
 
 
 
