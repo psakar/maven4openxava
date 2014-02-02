@@ -10,6 +10,7 @@ cp -r $src/xava/* $dest_openxava/src/main/resources
 cp -r $src/properties/* $dest_openxava/src/main/resources
 cp -r $src/bin/* $dest_openxava/src/main/resources
 cp -r $src/web $dest_openxava/src/main/resources/xava
+rm $dest_openxava/src/main/resources/xava/*.jsp
 
 # openxava : src/main
 rm -Rf $dest_openxava/src/main/java/*
@@ -22,9 +23,5 @@ mkdir -p $dest_testing/src/main/java/org/openxava
 cp -r $src/src/org/openxava/tests $dest_testing/src/main/java/org/openxava
 
 
-touch $dest_openxava/src/main/java/empty.txt
-touch $dest_openxava/src/main/resources/empty.txt
-touch $dest_testing/src/main/java/empty.txt
-touch $dest_testing/src/main/resources/empty.txt
 
 
