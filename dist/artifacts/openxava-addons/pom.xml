@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.openxava</groupId>
-    <artifactId>openxava-code-addons</artifactId>
+    <artifactId>openxava-addons</artifactId>
     <packaging>jar</packaging>
-    <name>OpenXava code from addons</name>
+    <name>OpenXava addons</name>
 
-    <description>OpenXava code addons</description>
+    <description>OpenXava addons</description>
     <version>4.9</version>
 
     <build>
@@ -36,5 +36,13 @@
 			</testResource>
 		</testResources>
     </build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.openxava</groupId>
+			<artifactId>openxava-official</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
 
 </project>
