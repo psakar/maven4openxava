@@ -16,7 +16,7 @@
 		<module>openxava-code</module>
 		<module>openxava-code-addons</module>
 		<module>openxava</module>
-		<module>testing-code</module>
+		<module>testing-addons</module>
 		<module>testing</module>
 	</modules>
 

@@ -7,9 +7,9 @@
     <artifactId>openxava-testing</artifactId>
     <packaging>jar</packaging>
 
-	<name>OpenXava Testing</name>
+	<name>OpenXava Testing official code</name>
 
-    <description>OpenXava Testing</description>
+    <description>OpenXava Testing official code</description>
     <version>4.9</version>
 
     <build>
@@ -44,6 +44,11 @@
             <artifactId>openxava</artifactId>
             <version>${project.version}</version>
         </dependency>
+		<dependency>
+			<groupId>org.openxava</groupId>
+			<artifactId>openxava-testing-addons</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.openxava.deps</groupId>
 			<artifactId>htmlunit-core-js</artifactId>
