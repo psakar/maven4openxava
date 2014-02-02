@@ -3,7 +3,7 @@ target/
 *.iml
 #dist/openxava*/tomcat
 
-dist/artifacts/openxava-official/src
+dist/artifacts/openxava/src
 dist/artifacts/testing/src
 
 
