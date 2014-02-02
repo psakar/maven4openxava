@@ -1,7 +1,7 @@
 
 src=openxava-4.9/workspace/OpenXava
 dest_openxava=artifacts/openxava-official
-dest_testing=artifacts/testing-official
+dest_testing=artifacts/testing
 
 
 # openxava : mkdir
