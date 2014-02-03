@@ -4,13 +4,13 @@ maven4openxava
 # Quick start:
 * git clone https://github.com/jecuendet/maven4openxava
 
-# Build openxava jars + install them locally in .m2/repository
+# Build openxava jars
 * cd dist
 * ./maven-create-install.sh : *This will take some minutes*
 
 # This will build the OxApp template
 * cd ../template
-* mvn -Pnot clean install     *-Pnot avoids running Unit Tests that still fail*
+* mvn -Pnot clean install   :  *-Pnot avoids running Unit Tests that still fail*
 * You are done!
 
 # Running
