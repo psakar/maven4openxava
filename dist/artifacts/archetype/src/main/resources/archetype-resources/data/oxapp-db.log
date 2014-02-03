@@ -1,0 +1,18 @@
+/*C1*/SET SCHEMA SYSTEM_LOBS
+INSERT INTO BLOCKS VALUES(0,2147483647,0)
+COMMIT
+/*C2*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C3*/SET SCHEMA PUBLIC
+create table Customer (id varchar(5) not null, email varchar(40), first varchar(40), last varchar(40), primary key (id))
+create table IMAGES (ID varchar(255) not null, GALLERY varchar(255), IMAGE varbinary(255), primary key (ID))
+create table Invoice (id varchar(5) not null, description varchar(255), status integer, customer_id varchar(5) not null, primary key (id))
+alter table Invoice add constraint FKD80EDB0D72283530 foreign key (customer_id) references Customer
+INSERT INTO CUSTOMER VALUES('1','bla@bli.com','John','Customer1')
+COMMIT
+INSERT INTO CUSTOMER VALUES('2','john@doe.com','Bill','Customer2')
+COMMIT
+INSERT INTO INVOICE VALUES('1','The one!',0,'2')
+COMMIT
+INSERT INTO INVOICE VALUES('2','Meal at New-York',1,'1')
+COMMIT

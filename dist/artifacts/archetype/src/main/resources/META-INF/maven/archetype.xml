@@ -20,7 +20,12 @@
 		<resource filtered="false">src/main/resources/xava.properties</resource>
 		<resource filtered="false">src/main/resources/OxApp-labels_ca.properties</resource>
 		<resource filtered="false">src/main/resources/hibernate.cfg.xml</resource>
-		<resource filtered="false">webapp/META-INF/context.xml</resource>
+		<!-- HSQL DB -->
+		<resource filtered="false">data/oxapp-db.log</resource>
+		<resource filtered="false">data/oxapp-db.properties</resource>
+		<resource filtered="false">data/oxapp-db.script</resource>
+		<!-- webapp -->
+		<resource filtered="true">webapp/META-INF/context.xml</resource>
 		<resource filtered="false">webapp/index.jsp</resource>
 		<resource filtered="false">webapp/WEB-INF/openxava.tld</resource>
 		<resource filtered="false">webapp/WEB-INF/web.xml</resource>

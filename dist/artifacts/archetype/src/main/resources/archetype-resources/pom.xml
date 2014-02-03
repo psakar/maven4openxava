@@ -8,8 +8,8 @@
 	<version>${version}</version>
     <packaging>war</packaging>
 
-    <name>oxapp-template</name>
-    <description>OpenXava application Template</description>
+    <name>Application ${artifactId}</name>
+    <description>OpenXava application ${artifactId} </description>
 
 	<profiles>
 		<profile>
