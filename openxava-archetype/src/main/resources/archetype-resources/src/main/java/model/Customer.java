@@ -1,4 +1,4 @@
-package org.openxava.oxapp.model;
+package ${package}.model;
 
 import java.util.List;
 

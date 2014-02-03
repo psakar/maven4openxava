@@ -46,7 +46,7 @@
                     <webResources>
                         <resource>
                             <filtering>false</filtering>
-                            <directory>${basedir}/webapp</directory>
+                            <directory>webapp</directory>
                         </resource>
                     </webResources>
                 </configuration>

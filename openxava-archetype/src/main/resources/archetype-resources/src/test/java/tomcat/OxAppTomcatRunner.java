@@ -1,4 +1,4 @@
-package org.openxava.tomcat;
+package ${package}.tomcat;
 
 import org.apache.catalina.Host;
 import org.apache.catalina.valves.AccessLogValve;

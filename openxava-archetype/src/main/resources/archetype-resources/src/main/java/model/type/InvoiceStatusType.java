@@ -1,4 +1,4 @@
-package org.openxava.oxapp.model.type;
+package ${package}.model.type;
 
 public enum InvoiceStatusType {
 
