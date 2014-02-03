@@ -1,8 +1,30 @@
 <Context>
 
+	<!-- PGSQL -->
+	<!-- You need to have -->
+	<!--    1. a login called <username> created -->
+	<!--    2. a schema called username in the postgres database -->
+	<!--    3. on which <username> is the owner of the schema -->
     <Resource name="jdbc/OxAppDS" auth="Container" type="javax.sql.DataSource"
               maxActive="20" maxIdle="5" maxWait="10000"
-              username="jec" password="welcome" driverClassName="org.postgresql.Driver"
+              username="username" password="password" driverClassName="org.postgresql.Driver"
               url="jdbc:postgresql://localhost:5432/postgres"/>
+
+
+	<!-- HSQL : network -->
+	<!--
+	<Resource name="jdbc/OxAppDS" auth="Container" type="javax.sql.DataSource"
+			  maxActive="20" maxIdle="5" maxWait="10000"
+			  username="sa" password="" driverClassName="org.hsqldb.jdbcDriver"
+			  url="jdbc:hsqldb:hsql://localhost:1666"/>
+			  -->
+
+	<!-- HSQL : embedded -->
+	<!--
+	<Resource name="jdbc/OxAppDS" auth="Container" type="javax.sql.DataSource"
+			  maxActive="20" maxIdle="5" maxWait="10000"
+			  username="sa" password="" driverClassName="org.hsqldb.jdbcDriver"
+			  url="jdbc:hsqldb:file:../data/my-school-db"/>
+			  -->
 
 </Context>

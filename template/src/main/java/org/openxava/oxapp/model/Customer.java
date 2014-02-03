@@ -1,20 +1,21 @@
 package org.openxava.oxapp.model;
 
-import org.openxava.annotations.Required;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Transient;
 
-/**
- * 
- * @author Javier Paniza
- */
+import org.openxava.annotations.Required;
 
 @Entity
-public class Cliente {
+public class Customer {
 	
-	@Id @Column(length=5) @Required   
+	@Id
+	@Column(length=5)
+	@Required
 	private String id;
 	
 	@Column(length=40)
@@ -61,4 +62,21 @@ public class Cliente {
 	public void setLast(String last) {
 		this.last = last;
 	}
+
+	@OneToMany(mappedBy="customer")
+	private List<Invoice> invoices;
+
+	public List<Invoice> getInvoices() {
+		return invoices;
+	}
+
+	public void setInvoices(List<Invoice> pupils) {
+		this.invoices = pupils;
+	}
+
+	@Transient
+	public String getDescription() {
+		return first+" "+last;
+	}
+
 }

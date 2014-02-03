@@ -184,12 +184,10 @@ public class TomcatRunner {
 	 * @throws Exception
 	 */
 	private String getDefaultWebXmlPath() throws IOException {
-		final File defaultWebXmlPath = new File(catalinaHome
-				+ "/default-web.xml");
+		final File defaultWebXmlPath = new File(catalinaHome + "/default-web.xml");
 		if (!defaultWebXmlPath.exists()) {
 			// Va le chercher dans le war
-			InputStream defWebXmlIs = getClass().getClassLoader()
-					.getResourceAsStream("embedded-tomcat-default-web.xml");
+			InputStream defWebXmlIs = getClass().getClassLoader().getResourceAsStream("embedded-tomcat-default-web.xml");
 			Assert.assertNotNull(defWebXmlIs);
 
 			byte[] bytes = new byte[defWebXmlIs.available()];

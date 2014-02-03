@@ -3,7 +3,7 @@
 
 <p>
 
-<a href="modules/Teacher">Teacher</a>
+<a href="modules/Customer">Customer</a>
 <p/>
-<a href="modules/Cliente">Cliente</a>
+<a href="modules/Invoice">Invoice</a>
 
