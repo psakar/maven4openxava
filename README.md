@@ -8,7 +8,7 @@ maven4openxava
 * cd dist
 * ./maven-create-install.sh : *This will take some minutes*
 
-# This will build the OxApp template
+# This will build the provided OxApp template
 * cd ../template
 * mvn -Pnot clean install   :  *-Pnot avoids running Unit Tests that still fail*
 * You are done!
@@ -21,4 +21,8 @@ maven4openxava
 * Point your browser at http://localhost:8083/OxApp/
 * You are done!
 
+
+# Creating a basic application with the archetype
+
+rm -Rf carenet/  ; mvn archetype:generate -DarchetypeGroupId=org.openxava -DarchetypeArtifactId=openxava-application-archetype -DarchetypeVersion=1.0.1-SNAPSHOT -DgroupId=ch.jesc.carenet -DartifactId=carenet^C
 
