@@ -2,7 +2,9 @@
 		   xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
 	<id>openxava-application-archetype</id>
 	<sources>
-		<source>src/main/java/App.java</source>
+		<source>src/main/java/org/openxava/oxapp/model/Customer.java</source>
+		<source>src/main/java/org/openxava/oxapp/model/Invoice.java</source>
+		<source>src/main/java/org/openxava/oxapp/model/type/InvoisStatusType.java</source>
 	</sources>
 	<testSources>
 		<source>src/test/java/AppTest.java</source>

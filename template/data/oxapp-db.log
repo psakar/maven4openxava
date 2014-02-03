@@ -1,14 +1,2 @@
-/*C1*/SET SCHEMA SYSTEM_LOBS
-INSERT INTO BLOCKS VALUES(0,2147483647,0)
-COMMIT
-/*C2*/SET SCHEMA PUBLIC
+/*C5*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C3*/SET SCHEMA PUBLIC
-create table Customer (id varchar(5) not null, email varchar(40), first varchar(40), last varchar(40), primary key (id))
-create table IMAGES (ID varchar(255) not null, GALLERY varchar(255), IMAGE varbinary(255), primary key (ID))
-create table Invoice (id varchar(5) not null, description varchar(255), status integer, customer_id varchar(5), primary key (id))
-alter table Invoice add constraint FKD80EDB0D87CC451B foreign key (customer_id) references Customer
-INSERT INTO CUSTOMER VALUES('1','bla@bli.com','FirstName','LastName')
-COMMIT
-INSERT INTO INVOICE VALUES('1','The donation invoice for OpenXava',0,'1')
-COMMIT
