@@ -3,12 +3,12 @@
 		   xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
 	<id>openxava-application-archetype</id>
 	<sources>
-		<source>src/main/java/org/openxava/oxapp/model/Customer.java</source>
-		<source>src/main/java/org/openxava/oxapp/model/Invoice.java</source>
-		<source>src/main/java/org/openxava/oxapp/model/type/InvoiceStatusType.java</source>
+		<source>src/main/java/model/Customer.java</source>
+		<source>src/main/java/model/Invoice.java</source>
+		<source>src/main/java/model/type/InvoiceStatusType.java</source>
 	</sources>
 	<testSources>
-		<source>src/test/java/org/openxava/tomcat/OxAppTomcatRunner.java</source>
+		<source>src/test/java/tomcat/OxAppTomcatRunner.java</source>
 	</testSources>
 	<resources>
 		<resource filtered="false">src/main/resources/OxApp-labels_es.properties</resource>

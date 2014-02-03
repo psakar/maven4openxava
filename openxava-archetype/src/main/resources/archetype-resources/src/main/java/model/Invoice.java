@@ -7,7 +7,7 @@ import javax.persistence.ManyToOne;
 
 import org.openxava.annotations.DescriptionsList;
 import org.openxava.annotations.Required;
-import org.openxava.oxapp.model.type.InvoiceStatusType;
+import ${package}.model.type.InvoiceStatusType;
 
 @Entity
 public class Invoice {
