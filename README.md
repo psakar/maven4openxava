@@ -18,7 +18,7 @@ maven4openxava
 * import the template application with the provided pom.xml
 * Open the OxAppTomcatRunner class
 * Run/Debug it
-* Point your browser at http://localhost:8083/OxApp/modules/Teacher
+* Point your browser at http://localhost:8083/OxApp/
 * You are done!
 
 
