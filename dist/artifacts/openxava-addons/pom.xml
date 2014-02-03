@@ -43,6 +43,12 @@
 			<artifactId>openxava</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.openxava.deps</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 </project>
