@@ -13,10 +13,10 @@
 	<version>4.9</version>
 
 	<modules>
-		<module>openxava-addons</module>
 		<module>openxava</module>
-		<module>testing-addons</module>
+		<module>openxava-addons</module>
 		<module>testing</module>
+		<module>testing-addons</module>
 	</modules>
 
 </project>

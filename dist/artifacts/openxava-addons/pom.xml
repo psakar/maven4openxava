@@ -39,25 +39,10 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.openxava.deps</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openxava.deps</groupId>
-			<artifactId>slf4j-jdk14</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openxava.deps</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.openxava.deps</groupId>
-			<artifactId>commons-io</artifactId>
+			<groupId>org.openxava</groupId>
+			<artifactId>openxava</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
+
 </project>

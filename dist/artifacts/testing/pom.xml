@@ -45,11 +45,6 @@
             <version>${project.version}</version>
         </dependency>
 		<dependency>
-			<groupId>org.openxava</groupId>
-			<artifactId>openxava-testing-addons</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.openxava.deps</groupId>
 			<artifactId>htmlunit-core-js</artifactId>
 			<version>${project.version}</version>

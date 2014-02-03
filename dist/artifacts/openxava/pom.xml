@@ -38,11 +38,6 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>org.openxava</groupId>
-            <artifactId>openxava-addons</artifactId>
-            <version>${project.version}</version>
-        </dependency>
 		<dependency>
 			<groupId>org.openxava.deps</groupId>
 			<artifactId>cssparser</artifactId>
