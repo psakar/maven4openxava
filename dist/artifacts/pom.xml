@@ -10,7 +10,7 @@
 	<name>OpenXava Base</name>
 
 	<description>OpenXava Base</description>
-	<version>4.9</version>
+	<version>4.9.1</version>
 
 	<modules>
 		<module>openxava</module>

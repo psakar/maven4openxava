@@ -10,7 +10,7 @@
 	<name>OpenXava Testing official code</name>
 
     <description>OpenXava Testing official code</description>
-    <version>4.9</version>
+	<version>4.9.1</version>
 
     <build>
         <plugins>

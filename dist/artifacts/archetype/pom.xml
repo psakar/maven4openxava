@@ -4,7 +4,7 @@
 
 	<groupId>org.openxava</groupId>
 	<artifactId>openxava-application-archetype</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>4.9.1_1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 </project>
