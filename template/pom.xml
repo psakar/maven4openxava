@@ -77,7 +77,7 @@
 		<dependency>
 			<groupId>org.openxava</groupId>
 			<artifactId>openxava-testing</artifactId>
-			<version>4.9</version>
+			<version>${openxava.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -93,5 +93,9 @@
 			<scope>test</scope>
 		</dependency>
     </dependencies>
+
+	<properties>
+		<openxava.version>4.9.1</openxava.version>
+	</properties>
 
 </project>
