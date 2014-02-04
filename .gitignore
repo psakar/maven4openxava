@@ -2,6 +2,8 @@ target/
 .idea
 *.iml
 
+dist/openxava-4.9/.metadata
+
 # The generated openxava.jar
 dist/openxava*/workspace/MySchool/web/WEB-INF/lib/openxava.jar
 dist/openxava*/tomcat/webapps/MySchool/WEB-INF/lib/openxava.jar
