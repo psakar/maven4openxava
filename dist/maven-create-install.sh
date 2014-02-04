@@ -1,8 +1,6 @@
 
-version=4.9
-
 # Build OpenXava
-(cd openxava-${version}/workspace/MySchool && ant)
+(cd openxava/workspace/MySchool && ant)
 
 # Install OpenXava deps
 scripts/install-openxava-deps.sh

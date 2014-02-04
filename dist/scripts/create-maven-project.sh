@@ -1,5 +1,5 @@
 
-src=openxava-4.9/workspace/OpenXava
+src=openxava/workspace/OpenXava
 src_addons=artifacts/openxava-addons
 dest_openxava=artifacts/openxava
 src_testing_addons=artifacts/testing-addons

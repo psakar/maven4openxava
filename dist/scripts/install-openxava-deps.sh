@@ -1,9 +1,14 @@
 #!/bin/bash
 
 groupId=org.openxava.deps
-version=4.9
+version=$1
 pomfile=/tmp/ox-deps.txt
-openxava=openxava-4.9/workspace
+openxava=openxava/workspace
+
+if [ -z $version ]; then
+	echo "Usage: $0 <version>"
+	exit 1
+fi
 
 
 
