@@ -4,6 +4,7 @@ src_addons=artifacts/openxava-addons
 dest_openxava=artifacts/openxava
 src_testing_addons=artifacts/testing-addons
 dest_testing=artifacts/testing
+dest_archetype=artifacts/archetype
 
 
 # openxava : mkdir
@@ -16,7 +17,10 @@ cp -r $src/xava/* $dest_openxava/src/main/resources
 cp -r $src/properties/* $dest_openxava/src/main/resources
 cp -r $src/bin/* $dest_openxava/src/main/resources
 cp -r $src/web $dest_openxava/src/main/resources/xava
-#rm $dest_openxava/src/main/resources/xava/*.jsp
+rm -Rf $dest_archetype/src/main/resources/archetype-resources/webapp/xava
+cp -r $src/web $dest_archetype/src/main/resources/archetype-resources/webapp
+mv $dest_archetype/src/main/resources/archetype-resources/webapp/web $dest_archetype/src/main/resources/archetype-resources/webapp/xava
+
 
 # openxava : src/main
 cp -r $src/src/* $dest_openxava/src/main/java
